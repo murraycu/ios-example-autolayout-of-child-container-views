@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 Murray Cumming. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "SimpleViewController.h"
 
-@interface ViewController ()
+@interface SimpleViewController ()
 
 @end
 
-@implementation ViewController
+@implementation SimpleViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

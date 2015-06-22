@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F2F812971B387E56006DE37B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F812961B387E56006DE37B /* main.m */; };
 		F2F8129A1B387E56006DE37B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F812991B387E56006DE37B /* AppDelegate.m */; };
-		F2F8129D1B387E56006DE37B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F8129C1B387E56006DE37B /* ViewController.m */; };
+		F2F8129D1B387E56006DE37B /* SimpleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F8129C1B387E56006DE37B /* SimpleViewController.m */; };
 		F2F812A01B387E56006DE37B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F8129E1B387E56006DE37B /* Main.storyboard */; };
 		F2F812A21B387E56006DE37B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2F812A11B387E56006DE37B /* Images.xcassets */; };
 		F2F812A51B387E56006DE37B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2F812A31B387E56006DE37B /* LaunchScreen.xib */; };
@@ -32,8 +32,8 @@
 		F2F812961B387E56006DE37B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F2F812981B387E56006DE37B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F2F812991B387E56006DE37B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F2F8129B1B387E56006DE37B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F2F8129C1B387E56006DE37B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F2F8129B1B387E56006DE37B /* SimpleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleViewController.h; sourceTree = "<group>"; };
+		F2F8129C1B387E56006DE37B /* SimpleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleViewController.m; sourceTree = "<group>"; };
 		F2F8129F1B387E56006DE37B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2F812A11B387E56006DE37B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F2F812A41B387E56006DE37B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -83,8 +83,8 @@
 			children = (
 				F2F812981B387E56006DE37B /* AppDelegate.h */,
 				F2F812991B387E56006DE37B /* AppDelegate.m */,
-				F2F8129B1B387E56006DE37B /* ViewController.h */,
-				F2F8129C1B387E56006DE37B /* ViewController.m */,
+				F2F8129B1B387E56006DE37B /* SimpleViewController.h */,
+				F2F8129C1B387E56006DE37B /* SimpleViewController.m */,
 				F2F8129E1B387E56006DE37B /* Main.storyboard */,
 				F2F812A11B387E56006DE37B /* Images.xcassets */,
 				F2F812A31B387E56006DE37B /* LaunchScreen.xib */,
@@ -219,7 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2F8129D1B387E56006DE37B /* ViewController.m in Sources */,
+				F2F8129D1B387E56006DE37B /* SimpleViewController.m in Sources */,
 				F2F8129A1B387E56006DE37B /* AppDelegate.m in Sources */,
 				F2F812971B387E56006DE37B /* main.m in Sources */,
 			);
@@ -418,6 +418,7 @@
 				F2F812B61B387E56006DE37B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2F812B71B387E56006DE37B /* Build configuration list for PBXNativeTarget "ios-example-autolayout-of-child-container-viewsTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +427,7 @@
 				F2F812B91B387E56006DE37B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
