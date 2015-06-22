@@ -15,9 +15,43 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="501" image="testImage" translatesAutoresizingMaskIntoConstraints="NO" id="Jho-Gv-BUe">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="514"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="518" id="I8c-AN-ZeB"/>
+                                    <constraint firstAttribute="height" constant="514" id="Ikv-pN-mmn"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="I8c-AN-ZeB"/>
+                                        <exclude reference="Ikv-pN-mmn"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="501" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ZT-ua-KnX" userLabel="label">
+                                <rect key="frame" x="0.0" y="522" width="600" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jho-Gv-BUe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6Si-zf-zBT"/>
+                            <constraint firstItem="7ZT-ua-KnX" firstAttribute="top" secondItem="Jho-Gv-BUe" secondAttribute="bottom" constant="8" symbolic="YES" id="PPw-To-4vJ"/>
+                            <constraint firstItem="Jho-Gv-BUe" firstAttribute="trailing" secondItem="7ZT-ua-KnX" secondAttribute="trailing" id="TQt-Xn-b5h"/>
+                            <constraint firstItem="7ZT-ua-KnX" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Vfz-q3-Ztu"/>
+                            <constraint firstItem="Jho-Gv-BUe" firstAttribute="leading" secondItem="7ZT-ua-KnX" secondAttribute="leading" id="ZCk-ic-yFe"/>
+                            <constraint firstItem="7ZT-ua-KnX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="b6Y-Aa-Yjv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7ZT-ua-KnX" secondAttribute="bottom" constant="8" symbolic="YES" id="cpL-cb-dcc"/>
+                            <constraint firstItem="Jho-Gv-BUe" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="yJ6-KQ-ij7"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Simple" id="TCk-IC-7Ah"/>
+                    <connections>
+                        <outlet property="label" destination="7ZT-ua-KnX" id="Y41-rn-DMt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -34,9 +68,45 @@
                     <view key="view" contentMode="scaleToFill" id="gSW-KF-7Dk">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="501" image="testImage" translatesAutoresizingMaskIntoConstraints="NO" id="tAq-97-8hO">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="514"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="518" id="NbF-gT-xci"/>
+                                    <constraint firstAttribute="height" constant="514" id="ZVn-xN-i46"/>
+                                    <constraint firstAttribute="height" constant="514" id="f8d-KJ-bnO"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="NbF-gT-xci"/>
+                                        <exclude reference="ZVn-xN-i46"/>
+                                        <exclude reference="f8d-KJ-bnO"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="501" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEM-2D-r2c" userLabel="label">
+                                <rect key="frame" x="0.0" y="522" width="600" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fEM-2D-r2c" firstAttribute="leading" secondItem="gSW-KF-7Dk" secondAttribute="leading" id="4TE-eQ-IPM"/>
+                            <constraint firstItem="tAq-97-8hO" firstAttribute="width" secondItem="gSW-KF-7Dk" secondAttribute="width" id="5YL-fE-FGw"/>
+                            <constraint firstItem="tAq-97-8hO" firstAttribute="top" secondItem="gSW-KF-7Dk" secondAttribute="top" id="7fQ-aY-xQO"/>
+                            <constraint firstItem="fEM-2D-r2c" firstAttribute="top" secondItem="tAq-97-8hO" secondAttribute="bottom" constant="8" symbolic="YES" id="Ey7-KA-xhS"/>
+                            <constraint firstItem="tAq-97-8hO" firstAttribute="leading" secondItem="fEM-2D-r2c" secondAttribute="leading" id="LAC-X5-nRH"/>
+                            <constraint firstItem="tAq-97-8hO" firstAttribute="trailing" secondItem="fEM-2D-r2c" secondAttribute="trailing" id="am9-Eb-Aqi"/>
+                            <constraint firstItem="fEM-2D-r2c" firstAttribute="width" secondItem="gSW-KF-7Dk" secondAttribute="width" id="aud-aP-tPV"/>
+                            <constraint firstItem="YR6-NL-gYJ" firstAttribute="top" secondItem="fEM-2D-r2c" secondAttribute="bottom" constant="8" symbolic="YES" id="pId-wo-TzS"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="With Child Container" id="8LQ-Pn-2dN"/>
+                    <connections>
+                        <outlet property="label" destination="fEM-2D-r2c" id="kPv-07-SQx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ldw-dh-nWR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -62,4 +132,7 @@
             <point key="canvasLocation" x="332" y="725"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="testImage" width="128" height="96"/>
+    </resources>
 </document>
