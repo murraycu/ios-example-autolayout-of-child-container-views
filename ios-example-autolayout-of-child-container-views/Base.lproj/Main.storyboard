@@ -86,7 +86,7 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <containerView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="501" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MvT-sQ-xe2" userLabel="containerView">
+                            <containerView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="501" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MvT-sQ-xe2" userLabel="containerView">
                                 <rect key="frame" x="0.0" y="522" width="600" height="21"/>
                                 <connections>
                                     <segue destination="ceo-YY-nAW" kind="embed" id="QBP-rS-P6N"/>
@@ -97,6 +97,7 @@
                         <constraints>
                             <constraint firstItem="tAq-97-8hO" firstAttribute="width" secondItem="gSW-KF-7Dk" secondAttribute="width" id="5YL-fE-FGw"/>
                             <constraint firstItem="tAq-97-8hO" firstAttribute="top" secondItem="gSW-KF-7Dk" secondAttribute="top" id="7fQ-aY-xQO"/>
+                            <constraint firstItem="YR6-NL-gYJ" firstAttribute="top" secondItem="MvT-sQ-xe2" secondAttribute="bottom" constant="8" id="AQp-Gg-XaM"/>
                             <constraint firstItem="MvT-sQ-xe2" firstAttribute="top" secondItem="tAq-97-8hO" secondAttribute="bottom" constant="8" symbolic="YES" id="Myf-OJ-1yw"/>
                             <constraint firstItem="MvT-sQ-xe2" firstAttribute="width" secondItem="gSW-KF-7Dk" secondAttribute="width" id="NS0-ox-VHw"/>
                             <constraint firstItem="tAq-97-8hO" firstAttribute="leading" secondItem="gSW-KF-7Dk" secondAttribute="leading" id="NzB-AH-R6g"/>
