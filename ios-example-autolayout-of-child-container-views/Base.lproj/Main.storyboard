@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QZ4-bg-0u3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Simple-->
@@ -123,7 +122,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="501" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sir-uc-ZPh" userLabel="label">
-                                <rect key="frame" x="16" y="-21" width="600" height="21"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -131,10 +130,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="aM9-bi-U4T" firstAttribute="top" secondItem="sir-uc-ZPh" secondAttribute="bottom" id="8Wk-co-Y63"/>
-                            <constraint firstItem="sir-uc-ZPh" firstAttribute="leading" secondItem="Ie7-Hn-97t" secondAttribute="leadingMargin" id="uKd-Th-gb5"/>
-                            <constraint firstItem="sir-uc-ZPh" firstAttribute="width" secondItem="Ie7-Hn-97t" secondAttribute="width" id="yeS-rZ-I8z"/>
-                            <constraint firstItem="sir-uc-ZPh" firstAttribute="height" secondItem="Ie7-Hn-97t" secondAttribute="height" id="zB0-Yp-bYL"/>
+                            <constraint firstAttribute="height" secondItem="sir-uc-ZPh" secondAttribute="height" id="HGm-vf-Ijk"/>
+                            <constraint firstItem="sir-uc-ZPh" firstAttribute="leading" secondItem="Ie7-Hn-97t" secondAttribute="leading" id="I0O-iu-xZF"/>
+                            <constraint firstItem="sir-uc-ZPh" firstAttribute="top" secondItem="aM9-bi-U4T" secondAttribute="bottom" id="LNi-7a-0ss"/>
+                            <constraint firstAttribute="trailing" secondItem="sir-uc-ZPh" secondAttribute="trailing" id="i2f-Jf-ocE"/>
+                            <constraint firstAttribute="width" secondItem="sir-uc-ZPh" secondAttribute="width" id="rUl-aG-fkw"/>
                         </constraints>
                     </view>
                     <connections>
