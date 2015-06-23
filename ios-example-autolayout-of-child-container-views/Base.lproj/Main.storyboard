@@ -38,6 +38,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7ZT-ua-KnX" secondAttribute="bottom" constant="8" id="61s-52-wIx"/>
                             <constraint firstItem="Jho-Gv-BUe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6Si-zf-zBT"/>
                             <constraint firstItem="7ZT-ua-KnX" firstAttribute="top" secondItem="Jho-Gv-BUe" secondAttribute="bottom" constant="8" symbolic="YES" id="PPw-To-4vJ"/>
                             <constraint firstItem="Jho-Gv-BUe" firstAttribute="trailing" secondItem="7ZT-ua-KnX" secondAttribute="trailing" id="TQt-Xn-b5h"/>
