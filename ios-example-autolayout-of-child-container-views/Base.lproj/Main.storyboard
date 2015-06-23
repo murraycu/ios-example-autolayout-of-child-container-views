@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QZ4-bg-0u3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Simple-->
@@ -69,23 +70,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="501" image="testImage" translatesAutoresizingMaskIntoConstraints="NO" id="tAq-97-8hO">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="501" misplaced="YES" image="testImage" translatesAutoresizingMaskIntoConstraints="NO" id="tAq-97-8hO">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="514"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="518" id="NbF-gT-xci"/>
                                     <constraint firstAttribute="height" constant="514" id="ZVn-xN-i46"/>
                                     <constraint firstAttribute="height" constant="514" id="f8d-KJ-bnO"/>
+                                    <constraint firstAttribute="height" constant="514" id="z9l-il-zhP"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="NbF-gT-xci"/>
                                         <exclude reference="ZVn-xN-i46"/>
                                         <exclude reference="f8d-KJ-bnO"/>
+                                        <exclude reference="z9l-il-zhP"/>
                                     </mask>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="501" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEM-2D-r2c" userLabel="label">
+                            <containerView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="501" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MvT-sQ-xe2" userLabel="containerView">
                                 <rect key="frame" x="0.0" y="522" width="600" height="21"/>
+                                <connections>
+                                    <segue destination="ceo-YY-nAW" kind="embed" id="QBP-rS-P6N"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tAq-97-8hO" firstAttribute="width" secondItem="gSW-KF-7Dk" secondAttribute="width" id="5YL-fE-FGw"/>
+                            <constraint firstItem="tAq-97-8hO" firstAttribute="top" secondItem="gSW-KF-7Dk" secondAttribute="top" id="7fQ-aY-xQO"/>
+                            <constraint firstItem="MvT-sQ-xe2" firstAttribute="top" secondItem="tAq-97-8hO" secondAttribute="bottom" constant="8" symbolic="YES" id="Myf-OJ-1yw"/>
+                            <constraint firstItem="MvT-sQ-xe2" firstAttribute="width" secondItem="gSW-KF-7Dk" secondAttribute="width" id="NS0-ox-VHw"/>
+                            <constraint firstItem="tAq-97-8hO" firstAttribute="leading" secondItem="gSW-KF-7Dk" secondAttribute="leading" id="NzB-AH-R6g"/>
+                            <constraint firstItem="tAq-97-8hO" firstAttribute="leading" secondItem="MvT-sQ-xe2" secondAttribute="leading" id="a9d-kf-mfb"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="With Child Container" id="8LQ-Pn-2dN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ldw-dh-nWR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1084" y="1077"/>
+        </scene>
+        <!--Child View Controller-->
+        <scene sceneID="oED-Hz-iRO">
+            <objects>
+                <viewController id="ceo-YY-nAW" customClass="ChildViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aM9-bi-U4T"/>
+                        <viewControllerLayoutGuide type="bottom" id="FH2-qS-EMA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ie7-Hn-97t">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="21"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="501" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sir-uc-ZPh" userLabel="label">
+                                <rect key="frame" x="16" y="-21" width="600" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -93,24 +131,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="fEM-2D-r2c" firstAttribute="leading" secondItem="gSW-KF-7Dk" secondAttribute="leading" id="4TE-eQ-IPM"/>
-                            <constraint firstItem="tAq-97-8hO" firstAttribute="width" secondItem="gSW-KF-7Dk" secondAttribute="width" id="5YL-fE-FGw"/>
-                            <constraint firstItem="tAq-97-8hO" firstAttribute="top" secondItem="gSW-KF-7Dk" secondAttribute="top" id="7fQ-aY-xQO"/>
-                            <constraint firstItem="fEM-2D-r2c" firstAttribute="top" secondItem="tAq-97-8hO" secondAttribute="bottom" constant="8" symbolic="YES" id="Ey7-KA-xhS"/>
-                            <constraint firstItem="tAq-97-8hO" firstAttribute="leading" secondItem="fEM-2D-r2c" secondAttribute="leading" id="LAC-X5-nRH"/>
-                            <constraint firstItem="tAq-97-8hO" firstAttribute="trailing" secondItem="fEM-2D-r2c" secondAttribute="trailing" id="am9-Eb-Aqi"/>
-                            <constraint firstItem="fEM-2D-r2c" firstAttribute="width" secondItem="gSW-KF-7Dk" secondAttribute="width" id="aud-aP-tPV"/>
-                            <constraint firstItem="YR6-NL-gYJ" firstAttribute="top" secondItem="fEM-2D-r2c" secondAttribute="bottom" constant="8" symbolic="YES" id="pId-wo-TzS"/>
+                            <constraint firstItem="aM9-bi-U4T" firstAttribute="top" secondItem="sir-uc-ZPh" secondAttribute="bottom" id="8Wk-co-Y63"/>
+                            <constraint firstItem="sir-uc-ZPh" firstAttribute="leading" secondItem="Ie7-Hn-97t" secondAttribute="leadingMargin" id="uKd-Th-gb5"/>
+                            <constraint firstItem="sir-uc-ZPh" firstAttribute="width" secondItem="Ie7-Hn-97t" secondAttribute="width" id="yeS-rZ-I8z"/>
+                            <constraint firstItem="sir-uc-ZPh" firstAttribute="height" secondItem="Ie7-Hn-97t" secondAttribute="height" id="zB0-Yp-bYL"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="With Child Container" id="8LQ-Pn-2dN"/>
                     <connections>
-                        <outlet property="label" destination="fEM-2D-r2c" id="kPv-07-SQx"/>
+                        <outlet property="label" destination="sir-uc-ZPh" id="eKs-yh-lEV"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ldw-dh-nWR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jg8-FA-f7q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1084" y="1077"/>
+            <point key="canvasLocation" x="1485" y="1502.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="LEi-Ri-CSf">
