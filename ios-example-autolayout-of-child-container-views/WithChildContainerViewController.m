@@ -7,9 +7,13 @@
 //
 
 #import "WithChildContainerViewController.h"
+#import "ChildViewController.h"
 
-@interface WithChildContainerViewController ()
+@interface WithChildContainerViewController ()  {
+    ChildViewController *_childController;
+}
 
+@property (weak, nonatomic) IBOutlet UIView *containerView;
 @end
 
 @implementation WithChildContainerViewController
@@ -17,6 +21,56 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
+
+    _childController = [self.storyboard instantiateViewControllerWithIdentifier:@"childViewController"];
+    [self.containerView addSubview:_childController.view];
+
+    _childController.view.frame= self.containerView.bounds;
+
+    UIView *subView = _childController.view;
+    UIView *parent = self.containerView;
+
+    //add constraints
+    subView.translatesAutoresizingMaskIntoConstraints=NO;
+
+    NSLayoutConstraint *width = [NSLayoutConstraint
+                                 constraintWithItem:subView
+                                 attribute:NSLayoutAttributeWidth
+                                 relatedBy:0
+                                 toItem:parent
+                                 attribute:NSLayoutAttributeWidth
+                                 multiplier:1.0
+                                 constant:0];
+    NSLayoutConstraint *height = [NSLayoutConstraint
+                                  constraintWithItem:subView
+                                  attribute:NSLayoutAttributeHeight
+                                  relatedBy:0
+                                  toItem:parent
+                                  attribute:NSLayoutAttributeHeight
+                                  multiplier:1.0
+                                  constant:0];
+    NSLayoutConstraint *top = [NSLayoutConstraint
+                               constraintWithItem:subView
+                               attribute:NSLayoutAttributeTop
+                               relatedBy:NSLayoutRelationEqual
+                               toItem:parent
+                               attribute:NSLayoutAttributeTop
+                               multiplier:1.0f
+                               constant:0.f];
+
+    NSLayoutConstraint *leading = [NSLayoutConstraint
+                                   constraintWithItem:subView
+                                   attribute:NSLayoutAttributeLeading
+                                   relatedBy:NSLayoutRelationEqual
+                                   toItem:parent
+                                   attribute:NSLayoutAttributeLeading
+                                   multiplier:1.0f
+                                   constant:0.f];
+    [parent addConstraint:width];
+    [parent addConstraint:height];
+    [parent addConstraint:top];
+    [parent addConstraint:leading];
 }
 
 - (void)didReceiveMemoryWarning {
